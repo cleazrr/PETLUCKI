@@ -1,0 +1,16 @@
+{
+  "name": "gamble-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Discord-authenticated Gamble website sharing the bot's Firebase wallet schema.",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cookie-session": "^2.1.1",
+    "discord-oauth2": "^2.1.0",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.5.0"
+  }
+}

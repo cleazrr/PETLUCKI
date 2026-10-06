@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gamble — Discord Casino</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">G</span><span>Gamble</span></a>
+    <nav><button data-page="home">Home</button><button data-page="games">Games</button><button data-page="leaderboard">Leaderboard</button></nav>
+    <div class="top-actions">
+      <button id="theme" class="icon-btn" title="Toggle theme">◐</button>
+      <div id="account"></div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section id="login" class="login-page">
+      <div class="login-card">
+        <div class="logo-large">G</div>
+        <p class="eyebrow">DISCORD GAMBLING HUB</p>
+        <h1>Play. Risk. Win.</h1>
+        <p class="muted">Your Gamble wallet is tied directly to your Discord account.</p>
+        <a class="discord-btn" href="/auth/discord"><span class="discord-svg"></span> Continue with Discord</a>
+        <small>Discord login is required. We never ask for your Discord password.</small>
+      </div>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <div class="hero">
+        <div><p class="eyebrow">WELCOME BACK</p><h1>Choose your game.</h1><p class="muted">Same Discord identity. Same wallet.</p></div>
+        <div class="balance-card"><span>Wallet</span><strong id="balance">0</strong><small>Gems</small></div>
+      </div>
+      <div class="game-grid" id="game-grid"></div>
+    </section>
+
+    <section id="game-view" class="hidden"></section>
+    <section id="leaderboard-view" class="hidden"></section>
+  </main>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
